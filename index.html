@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent - Historical Image Analyzer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            margin: auto;
+        }
+        input[type="file"] {
+            margin-top: 15px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Upload an Image</h2>
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="processImage()">Analyze</button>
+        <div id="output"></div>
+    </div><script>
+    function processImage() {
+        const output = document.getElementById('output');
+        output.innerHTML = "<p>Processing image... (AI analysis not implemented yet)</p>";
+    }
+</script>
+
+</body>
+  </html>
